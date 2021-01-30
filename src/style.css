@@ -12,7 +12,7 @@ h2 {
   text-align: center;
   color: #f6ab6c;
   border: solid;
-  width: 125px !important;
+  width: 140px !important;
   display: block;
   margin: 20px auto;
   font-size: 45px !important;
@@ -49,4 +49,17 @@ form {
 }
 .day {
   margin: 40px 0;
+}
+
+#temp-together {
+  font-size: 15px;
+  position: relative;
+  top: -18px;
+}
+
+#temp-current {
+}
+
+#F-color {
+  color: #f6ab6c;
 }
