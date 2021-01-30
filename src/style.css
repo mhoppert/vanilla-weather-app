@@ -1,3 +1,52 @@
 h1 {
-  color: magenta;
+  text-align: center;
+  color: #df5e88;
+  border: solid;
+  width: 300px !important;
+  font-size: 40px !important;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  color: #f6ab6c;
+  border: solid;
+  width: 125px !important;
+  display: block;
+  margin: 20px auto;
+  font-size: 45px !important;
+  border-radius: 10px;
+  padding: 5px 0 !important;
+}
+
+#dateTime {
+  font-size: 20px;
+}
+.row {
+  color: #b9de6f;
+  border: solid;
+  margin: 10px 0;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.mb-3 {
+  color: #8fcfd1;
+  width: 300px;
+  font-size: 20px;
+}
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #8fcfd1 !important;
+  border-color: #8fcfd1 !important;
+}
+
+form {
+  margin: 20px 0;
+}
+.day {
+  margin: 40px 0;
 }
