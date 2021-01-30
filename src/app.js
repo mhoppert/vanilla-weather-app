@@ -38,8 +38,8 @@ dateTime.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 function displayTemp(response){
     
     document.querySelector("#city").innerHTML = response.data.name;
-    let temperatureF = Math.round(response.data.main.temp);
-    document.querySelector("#dayTemp").innerHTML = `${temperatureF}°F`;
+    let temperatureC = Math.round(response.data.main.temp);
+    document.querySelector("#dayTemp").innerHTML = `${temperatureC}°C`;
 }
 
 
@@ -47,7 +47,7 @@ function search(event){
     event.preventDefault();
     let apiKey = "3551653c49fc76dab5c8b51298eb4f65";
     let city = document.querySelector("#search-text-input").value;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     
     axios.get(apiUrl).then(displayTemp);
     

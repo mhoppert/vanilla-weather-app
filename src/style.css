@@ -57,9 +57,6 @@ form {
   top: -18px;
 }
 
-#temp-current {
-}
-
-#F-color {
+#temp-current #F-color {
   color: #f6ab6c;
 }
