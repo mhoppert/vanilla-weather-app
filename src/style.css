@@ -54,9 +54,13 @@ form {
 #temp-together {
   font-size: 15px;
   position: relative;
-  top: -18px;
+  top: -20px;
 }
 
-#temp-current #F-color {
+#temp-current {
+  padding: 0px;
+}
+
+#F-color {
   color: #f6ab6c;
 }

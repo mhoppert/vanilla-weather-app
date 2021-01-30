@@ -39,7 +39,7 @@ function displayTemp(response){
     
     document.querySelector("#city").innerHTML = response.data.name;
     let temperatureC = Math.round(response.data.main.temp);
-    document.querySelector("#dayTemp").innerHTML = `${temperatureC}°C`;
+    document.querySelector("#temp-current").innerHTML = `${temperatureC}`;
 }
 
 
