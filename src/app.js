@@ -36,10 +36,16 @@ let months = [
 dateTime.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
 function displayTemp(response){
-    console.log(response.data);
     document.querySelector("#city").innerHTML = response.data.name;
     let temperatureC = Math.round(response.data.main.temp);
     document.querySelector("#temp-current").innerHTML = `${temperatureC}`;
+    let description = document.querySelector("#condition");
+    description.innerHTML = response.data.weather[0].description;
+    let humidityCurrent = document.querySelector("#humidity");
+    humidityCurrent.innerHTML = response.data.main.humidity;
+    let windElement = document.querySelector("#windSpeed");
+    windElement.innerHTML = Math.round(response.data.wind.speed);
+    
 }
 
 
