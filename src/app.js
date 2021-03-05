@@ -36,7 +36,7 @@ let months = [
 dateTime.innerHTML = `${day}, ${month} ${date}, ${hours}:${minutes}`;
 
 function displayTemp(response){
-    
+    console.log(response.data);
     document.querySelector("#city").innerHTML = response.data.name;
     let temperatureC = Math.round(response.data.main.temp);
     document.querySelector("#temp-current").innerHTML = `${temperatureC}`;
